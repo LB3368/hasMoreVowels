@@ -22,3 +22,11 @@ console.log(hasMoreVowels('plum'))
 console.log(hasMoreVowels('developer'))
 console.log(hasMoreVowels('engineering'))
 console.log(hasMoreVowels('ocean'))
+
+
+/**
+ * alternative code
+ * 
+ * const hasMoreVowels = (word) => word.split('').filter((x => ['a', 'e', 'i', 'o', 'u'].includes(x))).length >= (word.length/2)
+
+ */
