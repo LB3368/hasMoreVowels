@@ -29,4 +29,16 @@ console.log(hasMoreVowels('ocean'))
  * 
  * const hasMoreVowels = (word) => word.split('').filter((x => ['a', 'e', 'i', 'o', 'u'].includes(x))).length >= (word.length/2)
 
+ how can you tweak it to also account for a string such as 'aALl'
+function hasMoreVowels(word) {
+  const vowels = "a,e,i,o,u,A,E,I,O,U";
+  let vowelCount = 0;
+  for (let i = 0; i < word.length; i++) {
+    if (vowels.includes(word[i])) {
+      vowelCount++;
+    }
+  }
+  return vowelCount > word.length / 2;
+}
+console.log(hasMoreVowels("Aal"));
  */
